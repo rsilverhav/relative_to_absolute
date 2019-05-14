@@ -6,10 +6,6 @@ files=($(grep -rlI "import .*'\.\." $SRC_DIR))
 
 for file in "${files[@]}"
 do
-  echo "$file"
-done
-for file in "${files[@]}"
-do
   old_ifs=${IFS}
   IFS="
 "
